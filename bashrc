@@ -12,7 +12,14 @@ export OSH='/home/sheehy/.oh-my-bash'
 OSH_THEME="random"
 
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
-OMB_THEME_RANDOM_IGNORED=("garo", "agnoster", "developer", "tylenol")
+OMB_THEME_RANDOM_IGNORED=(
+	"garo",
+	"agnoster",
+	"developer",
+	"tylenol",
+	"rjorgenson",
+	"doubletime_multiline_pyonly",
+)
 
 # Uncomment the following line to use case-sensitive completion.
 # OMB_CASE_SENSITIVE="true"
