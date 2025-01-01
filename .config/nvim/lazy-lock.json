@@ -1,6 +1,8 @@
 {
   "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
   "nvim-lspconfig": { "branch": "master", "commit": "8b15a1a597a59f4f5306fad9adfe99454feab743" },
-  "nvim-treesitter": { "branch": "master", "commit": "7e0fcf0d456fc5818da1af35b1a3f5c784fce457" },
+  "nvim-treesitter": { "branch": "master", "commit": "a295ba13d27684e8904e8e51876b84ee85135cf1" },
+  "sonokai": { "branch": "master", "commit": "1d7ca954792dfddd9e73c53563d85adaeb8c8437" },
+  "tiny-inline-diagnostic.nvim": { "branch": "main", "commit": "7d0245e89395227c4ef757ade6e083ca0b489103" },
   "which-key.nvim": { "branch": "main", "commit": "8ab96b38a2530eacba5be717f52e04601eb59326" }
 }
