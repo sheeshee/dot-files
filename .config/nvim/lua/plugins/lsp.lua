@@ -20,7 +20,9 @@ return {
 
 			-- Diagnostic settings
 			vim.diagnostic.config({
-				virtual_text = true,
+				-- set virtual_text to false to not interfere with 
+				-- rachertier/tiny-inline-diagnostics.nvim
+				virtual_text = false,
 				signs = true,
 				underline = true,
 				update_in_insert = false,
