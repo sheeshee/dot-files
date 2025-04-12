@@ -1,8 +1,8 @@
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [user]
 	email = samuelsheehy95@gmail.com
@@ -22,3 +22,8 @@
 [merge]
     conflictstyle = zdiff3
 
+[color "status"]
+	updated = yellow
+	changed = yellow
+	untracked = red
+	remoteBranch = reverse
