@@ -14,10 +14,13 @@ return {
 				"javascript",
 				"html",
 				"python",
+				"astro",
+				"tsx",
+				"typescript"
 			},
           		sync_install = false,
           		highlight = { enable = true },
-          		indent = { enable = true },  
+          		indent = { enable = true },
         	})
 	end
 }
