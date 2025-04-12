@@ -129,3 +129,6 @@ export PATH="$HOME/local/bin:$PATH"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+
+# load API tokens
+. ~/.tokens
