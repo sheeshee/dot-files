@@ -6,6 +6,7 @@ vim.g.maplocalleader = "\\"
 
 toggle_number = require('sheehy.linenumbers')
 vim.keymap.set('n', '<leader>n', toggle_number, { desc = 'Toggle line number display mode' })
+vim.keymap.set('n', '<leader>w', ':set wrap!<CR>', { desc = 'Toggle line wrap' })
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Open Explorer' })
 vim.keymap.set('n', '<leader>ff', ':FzfLua files<CR>', { desc = 'Fuzzy find files' })
 vim.keymap.set('n', '<leader>fg', ':FzfLua grep<CR>', { desc = 'Grep files' })
