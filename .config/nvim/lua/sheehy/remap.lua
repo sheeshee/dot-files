@@ -9,3 +9,4 @@ vim.keymap.set('n', '<leader>n', toggle_number, { desc = 'Toggle line number dis
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Open Explorer' })
 vim.keymap.set('n', '<leader>ff', ':FzfLua files<CR>', { desc = 'Fuzzy find files' })
 vim.keymap.set('n', '<leader>fg', ':FzfLua grep<CR>', { desc = 'Grep files' })
+vim.keymap.set('n', '<leader>fo', ':FzfLua oldfiles<CR>', { desc = 'Find oldfiles' })
