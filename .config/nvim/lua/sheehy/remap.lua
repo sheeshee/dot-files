@@ -12,3 +12,5 @@ vim.keymap.set('n', '<leader>ff', ':FzfLua files<CR>', { desc = 'Fuzzy find file
 vim.keymap.set('n', '<leader>fg', ':FzfLua grep<CR>', { desc = 'Grep files' })
 vim.keymap.set('n', '<leader>fo', ':FzfLua oldfiles<CR>', { desc = 'View oldfiles' })
 vim.keymap.set('n', '<leader>fr', ':FzfLua registers<CR>', { desc = 'View registers' })
+vim.keymap.set('n', '<leader>fs', ':FzfLua lsp_document_symbols<CR>', { desc = 'View document symbols' })
+
