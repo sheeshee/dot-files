@@ -5,14 +5,12 @@ return {
   dependencies = {
     "nvim-tree/nvim-web-devicons",
   },
-  config = function()
-    require("nvim-tree").setup {
-      view = {
-        side = "right",
-      },
-      update_focused_file = {
-        enable = true,
-      }
+  opts = {
+    view = {
+      side = "right",
+    },
+    update_focused_file = {
+      enable = true,
     }
-  end,
+  }
 }
