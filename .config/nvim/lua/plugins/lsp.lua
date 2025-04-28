@@ -46,5 +46,10 @@ return {
   				desc = 'LSP: Disable hover capability from Ruff',
 			})
 		end
+	},
+	{
+		"pmizio/typescript-tools.nvim",
+		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+		opts = {},
 	}
 }
