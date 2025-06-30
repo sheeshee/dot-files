@@ -132,3 +132,10 @@ eval "$(atuin init bash)"
 
 # load API tokens
 . ~/.tokens
+
+# utilities
+mkproj() {
+    local slug=$(codename)
+    echo "Creating repo: $slug"
+    git init "$slug"
+}
