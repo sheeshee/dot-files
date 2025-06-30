@@ -9,3 +9,4 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 
 alias gs='git status -sb'
+alias lg='lazygit'
