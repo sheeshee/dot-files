@@ -26,6 +26,5 @@
 	updated = yellow
 	changed = yellow
 	untracked = red
-	remoteBranch = reverse
 [init]
 	defaultBranch = main
