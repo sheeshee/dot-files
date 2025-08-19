@@ -136,6 +136,31 @@ eval "$(atuin init bash)"
 # load API tokens
 . ~/.tokens
 
+# Check dot-files repository sync status
+if [ -d "$HOME/dot-files/.git" ]; then
+    (
+        cd "$HOME/dot-files" 2>/dev/null
+        if git remote get-url origin >/dev/null 2>&1; then
+            # Only fetch if we haven't fetched recently (last 4 hours)
+            fetch_head="$HOME/dot-files/.git/FETCH_HEAD"
+            if [ ! -f "$fetch_head" ] || [ "$(find "$fetch_head" -mmin +240 2>/dev/null)" ]; then
+                git fetch origin >/dev/null 2>&1 &
+            fi
+
+            # Check sync status with existing remote refs
+            current_branch=$(git branch --show-current 2>/dev/null)
+            if [ -n "$current_branch" ] && git rev-parse "origin/$current_branch" >/dev/null 2>&1; then
+                local_commit=$(git rev-parse HEAD 2>/dev/null)
+                remote_commit=$(git rev-parse "origin/$current_branch" 2>/dev/null)
+
+                if [ "$local_commit" != "$remote_commit" ]; then
+                    echo -e "\033[33m⚠️  dot-files repository is out of sync with remote\033[0m"
+                fi
+            fi
+        fi
+    )
+fi
+
 # utilities
 mkproj() {
     local slug=$(codename)
