@@ -142,3 +142,5 @@ mkproj() {
     echo "Creating repo: $slug"
     git init "$slug"
 }
+
+alias claude="/home/sheehy/.claude/local/claude"
