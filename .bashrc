@@ -169,3 +169,7 @@ mkproj() {
 }
 
 alias claude="/home/sheehy/.claude/local/claude"
+
+# obsidian
+export OBSIDIAN_VAULT_PATH="$HOME/notes"
+export OBSIDIAN_TOOLS_DIR="$HOME/projects/obsidian-tools"
