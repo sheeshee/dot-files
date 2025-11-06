@@ -5,11 +5,13 @@ return {
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {},
 		config = function()
-			local lspconfig = require('lspconfig')
-
+			local lspconfig = vim.lsp.config
 			-- Python
-			lspconfig.pyright.setup({})
-			lspconfig.ruff.setup({})
+			lspconfig("pyright", {})
+			lspconfig("ruff", {})
+
+			vim.lsp.enable({"ruff", "pyright"})
+
 
 			-- Key mappings
 			vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { desc = "Go to declaration" })
