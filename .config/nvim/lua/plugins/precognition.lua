@@ -2,9 +2,9 @@ return {
     "tris203/precognition.nvim",
     --event = "VeryLazy",
     opts = {
+    	highlightColor = { fg = "#A68F6A" } -- bg_yellow from sonokai
     -- startVisible = true,
     -- showBlankVirtLine = true,
-    -- highlightColor = { link = "Comment" },
     -- hints = {
     --      Caret = { text = "^", prio = 2 },
     --      Dollar = { text = "$", prio = 1 },
