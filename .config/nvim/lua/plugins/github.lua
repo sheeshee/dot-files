@@ -8,6 +8,7 @@ return {
   },
   cmd = "Octo",
   opts = {
-    picker = "fzf-lua"
+    picker = "fzf-lua",
+    use_local_fs = true
   },
 }
