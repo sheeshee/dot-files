@@ -15,6 +15,7 @@
   "precognition.nvim": { "branch": "main", "commit": "2aae2687207029b3611a0e19a289f9e1c7efbe16" },
   "python-import.nvim": { "branch": "master", "commit": "798a7dfc2993099ce3f9e7cac8872fb2bc2a484d" },
   "smear-cursor.nvim": { "branch": "main", "commit": "abfa5835920b1d76c0e24e1465a618ad914be90a" },
+  "snacks.nvim": { "branch": "main", "commit": "dec29f55666f8f4545835636077a86b150faf630" },
   "sonokai": { "branch": "master", "commit": "48c809c887ce7b7828f7ea27408fc2ef2179efb5" },
   "tiny-inline-diagnostic.nvim": { "branch": "main", "commit": "d4d171854afedae4513a73faf117be5649c7d1f8" },
   "typescript-tools.nvim": { "branch": "master", "commit": "bf11d98ad5736e1cbc1082ca9a03196d45c701f1" },
