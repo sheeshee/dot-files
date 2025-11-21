@@ -9,8 +9,17 @@ return {
       -- Python
       lspconfig("pyright", {})
       lspconfig("ruff", {})
+      lspconfig("lua_ls", {
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = { "vim" }
+            }
+          }
+        }
+      })
 
-			vim.lsp.enable({"ruff", "pyright"})
+      vim.lsp.enable({"ruff", "pyright", "lua_ls"})
 
 
       -- Key mappings
