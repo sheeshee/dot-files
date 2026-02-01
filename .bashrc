@@ -168,7 +168,6 @@ mkproj() {
     git init "$slug"
 }
 
-alias claude="/home/sheehy/.claude/local/claude"
 
 # obsidian
 export OBSIDIAN_VAULT_PATH="$HOME/notes"
