@@ -22,3 +22,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")  -- move selection up/down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "n", "nzzzv")  -- keep cursor centered when cycling through searches
+
+-- Custom scroll mappings
+vim.keymap.set("n", "<C-k>", "<C-Y>k", { desc = "Scroll up 1 line" })
+vim.keymap.set("n", "<C-j>", "<C-E>j", { desc = "Scroll down 1 line" })
