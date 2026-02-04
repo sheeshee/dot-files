@@ -26,3 +26,7 @@ vim.keymap.set("n", "n", "nzzzv")  -- keep cursor centered when cycling through 
 -- Custom scroll mappings
 vim.keymap.set("n", "<C-k>", "<C-Y>k", { desc = "Scroll up 1 line" })
 vim.keymap.set("n", "<C-j>", "<C-E>j", { desc = "Scroll down 1 line" })
+
+-- Adjust window width
+vim.keymap.set("n", "<C-h>", "<C-w><", { desc = "Decrease window width" })
+vim.keymap.set("n", "<C-l>", "<C-w>>", { desc = "Increase window width" })
