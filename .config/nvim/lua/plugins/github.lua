@@ -23,6 +23,11 @@ return {
       "<leader>gp",
       "<CMD>Octo search is:pr is:open user-review-requested:@me<CR>",
       desc = "List PRs Awaiting Review"
-    }
+    },
+    {
+      "<leader>go",
+      "<CMD>Octo actions<CR>",
+      desc = "List Octo actions"
+    },
   }
 }
