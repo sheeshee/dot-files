@@ -168,6 +168,7 @@ mkproj() {
     git init "$slug"
 }
 
+export CDPATH=".:$HOME"
 
 # obsidian
 export OBSIDIAN_VAULT_PATH="$HOME/notes"
