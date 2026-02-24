@@ -22,3 +22,7 @@ vim.keymap.set("n", "<C-j>", "<C-E>j", { desc = "Scroll down 1 line" })
 -- Adjust window width
 vim.keymap.set("n", "<C-h>", "<C-w><", { desc = "Decrease window width" })
 vim.keymap.set("n", "<C-l>", "<C-w>>", { desc = "Increase window width" })
+
+-- Exit terminal mode
+-- The double escape accounts for Claude terminal capturing the first one
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
