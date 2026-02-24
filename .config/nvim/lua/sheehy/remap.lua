@@ -4,7 +4,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-toggle_number = require("sheehy.linenumbers")
+local toggle_number = require("sheehy.linenumbers")
 vim.keymap.set("n", "<leader>n", toggle_number, { desc = "Toggle line number display mode" })
 vim.keymap.set("n", "<leader>w", ":set wrap!<CR>", { desc = "Toggle line wrap" })
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Open Explorer" })
