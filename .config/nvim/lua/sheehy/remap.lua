@@ -26,3 +26,8 @@ vim.keymap.set("n", "<C-l>", "<C-w>>", { desc = "Increase window width" })
 -- Exit terminal mode
 -- The double escape accounts for Claude terminal capturing the first one
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+
+-- manage tabs
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", { desc = "Create a new tab" })
+vim.keymap.set("n", "<leader>tq", ":tabclose<CR>", { desc = "Clost current tab" })
+
