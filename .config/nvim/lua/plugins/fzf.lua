@@ -18,5 +18,6 @@ return {
     vim.keymap.set("n", "<leader>fr", ":FzfLua lsp_references<CR>", { desc = "View references" })
     vim.keymap.set("n", "<leader>fj", ":FzfLua jumps<CR>", { desc = "View jumps" })
     vim.keymap.set("n", "<leader>f*", ":FzfLua grep_cword<CR>", { desc = "Grep word under cursor" })
+    vim.keymap.set("v", "<leader>f", ":FzfLua grep_visual<CR>", { desc = "Grep visual selection" })
   end,
 }
