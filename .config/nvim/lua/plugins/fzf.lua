@@ -4,9 +4,27 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   -- or if using mini.icons/mini.nvim
   -- dependencies = { "echasnovski/mini.icons" },
-  opts = {
-
-  },
+  ---@module "fzf-lua"
+  ---@type fzf-lua.Config|{}
+  ---@diagnostic disable: missing-fields
+  opts = function()
+    local actions = require("fzf-lua").actions
+    return {
+      actions = {},
+      grep = {
+        actions = {
+          -- actions inherit from 'actions.files' and merge
+          -- this action toggles between 'grep' and 'live_grep'
+          ["ctrl-g"] = { actions.grep_lgrep },
+          -- toggles '.gitignore' for grep
+          ["ctrl-r"] = { actions.toggle_ignore },
+          -- toggles hidden files for grep
+          ["ctrl-h"] = { actions.toggle_hidden },
+        },
+      },
+    }
+  end,
+  ---@diagnostic enable: missing-fields
   config = function(_, opts)
     require("fzf-lua").setup(opts)
     vim.keymap.set("n", "<leader>ff", ":FzfLua files<CR>", { desc = "Fuzzy find files" })
